@@ -175,6 +175,44 @@ body {
     animation: piscar 1s infinite alternate;
 }
 
+.antena2 {
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    background-color: #6d6d6d;
+    top: 313px; /* Coloca a antena acima do prédio */
+    left: 69%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* Opcional: uma bolinha no topo da antena */
+.antena2::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    top: -4px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+/* Efeito de piscar na bolinha */
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.antena2::after {
+    animation: piscar 1s infinite alternate;
+}
+
 .predio2 {
     width: 200px;
     height: 400px;
