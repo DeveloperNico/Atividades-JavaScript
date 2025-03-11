@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício | JavaScript</title>
+</head>
+<body>
+    <script>
+        let opcoes = ["pedra", "papel", "tesoura"];
+        let escolhaUsuario = prompt("Escolha: pedra, papel ou tesoura?").toLowerCase();
+        let escolhaComputador = opcoes[Math.floor(Math.random() * 3)];
+
+        document.write(`Você escolheu: ${escolhaUsuario} <br>`);
+        document.write(`O computador escolheu: ${escolhaComputador} <br>`);
+
+        if (escolhaUsuario === escolhaComputador) {
+            document.write("Empate!");
+        } else if (
+            (escolhaUsuario === "pedra" && escolhaComputador === "tesoura") ||
+            (escolhaUsuario === "papel" && escolhaComputador === "pedra") ||
+            (escolhaUsuario === "tesoura" && escolhaComputador === "papel")) 
+        {
+            document.write("Você venceu!");
+        } else {
+            document.write("O computador venceu!");
+        }
+    </script>
+</body>
+</html>

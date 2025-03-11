@@ -126,6 +126,10 @@ body {
 .predio {
     background-color: #ccc;
     transition: all 0.3s ease-in-out; /* Transição suave para alterações */
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 155px 0;
+    flex-wrap: wrap;
 }
 
 .predio1 {
@@ -233,11 +237,34 @@ body {
 
 .predio4 {
     width: 200px;
-    height: 650px;
+    height: 500px;
     background-color: #999999;
     opacity: 1; /* Totalmente visível */
     z-index: 4;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra mais forte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    & h3 {
+        font-family: 'Pixelify Sans', sans-serif;
+    }
+
+    & img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.exercicios {
+    position: absolute;
+    top: 260px; /* Move para cima */
+    left: 58%;
+    transform: translateX(-50%); /* Centraliza no prédio */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .predio5 {
@@ -258,12 +285,65 @@ body {
     box-shadow: 0 9px 18px rgba(0, 0, 0, 0.65); /* Sombra mais forte */
 }
 
+.janela {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(70, 152, 230, 0.5);
+    border: 2px solid black;
+    margin: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0; /* Oculta o texto padrão */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.predio4 .janela {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(70, 152, 230, 0.5);
+    border: 2px solid black;
+    margin: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0; /* Oculta o texto padrão */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.predio4 .janela:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece a janela */
+    font-size: 12px; /* Exibe o texto */
+}
+
+.predio4 .janela::after {
+    content: attr(data-text); /* Pega o texto do data-text */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.predio4 .janela:hover::after {
+    opacity: 1; /* Exibe o texto ao passar o mouse */
+}
+
 .chao {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: #412000;
+    background-color: #2e2d2b;
     z-index: 7; /* Coloca o chão atrás dos prédios */
 }

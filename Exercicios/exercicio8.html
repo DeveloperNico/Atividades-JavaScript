@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício | JavaScript</title>
+</head>
+<body>
+    <script>
+        let anoAtual = Number(prompt("Digite o ano atual: "));
+
+        if ((anoAtual % 4 == 0 && anoAtual % 100 != 0) || (anoAtual % 400 == 0)) {
+            window.alert(`O ano ${anoAtual} é bisexto.`)
+        }
+        else {
+            window.alert(`O ano ${anoAtual} não é bisexto.`);
+        }
+    </script>
+</body>
+</html>
