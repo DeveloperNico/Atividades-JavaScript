@@ -16,6 +16,11 @@ body {
     background-color: rgb(52, 52, 160);
 }
 
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
 a {
     background-color: #ee1f1f;
     text-decoration: none;
@@ -30,4 +35,29 @@ a {
 
 a:hover {
     background-color: #c71919;
+}
+
+.exercicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.exercicios a {
+    background-color: #ee1f1f;
+    text-decoration: none;
+    margin: 40px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.exercicios a:hover {
+    background-color: #c71919;
+
 }
