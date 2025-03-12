@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício | JavaScript</title>
+    <title>Exercício 11 | JavaScript</title>
+    <link rel="stylesheet" href="/Atividades-JavaScript/styles/estilos-exercicios.css">
 </head>
 <body>
-    <script>
-        let opcoes = ["pedra", "papel", "tesoura"];
-        let escolhaUsuario = prompt("Escolha: pedra, papel ou tesoura?").toLowerCase();
-        let escolhaComputador = opcoes[Math.floor(Math.random() * 3)];
+    <h1>Pedra, Papel e Tesoura</h1>
+    <div class="container">
+        <label>Escolha: pedra, papel ou tesoura? </label>
+        <select id="escolhaUsuario" name="escolhaUsuario">
+            <option value="pedra">Pedra</option>
+            <option value="papel">Papel</option>
+            <option value="tesoura">Tesoura</option>
+        </select>
 
-        document.write(`Você escolheu: ${escolhaUsuario} <br>`);
-        document.write(`O computador escolheu: ${escolhaComputador} <br>`);
+        <div class="botao">
+            <button id="calcular">Jogar</button>
+        </div>
 
-        if (escolhaUsuario === escolhaComputador) {
-            document.write("Empate!");
-        } else if (
-            (escolhaUsuario === "pedra" && escolhaComputador === "tesoura") ||
-            (escolhaUsuario === "papel" && escolhaComputador === "pedra") ||
-            (escolhaUsuario === "tesoura" && escolhaComputador === "papel")) 
-        {
-            document.write("Você venceu!");
-        } else {
-            document.write("O computador venceu!");
-        }
-    </script>
+        <p id="texto1"></p>
+        <p id="texto2"></p>
+        <p id="resultado"></p>
+    </div>
+
+    <div class="voltar">
+        <a href="/Atividades-JavaScript/aula1.html">Voltar para aula 1</a>
+        <a href="/Atividades-JavaScript/index.html">Voltar para página inicial</a>
+    </div>
+
+    <script src="/Atividades-JavaScript/scripts/ex11.js"></script>
 </body>
 </html>

@@ -17,13 +17,22 @@ body {
     color: #fff;
 }
 
+.margin {
+    margin-top: 90px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     height: 300px;
     width: 500px;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: rgb(37, 37, 117);
+    border-radius: 10px;
+}
+
+.container.expandido {
+    height: 465px;
 }
 
 label {
@@ -31,7 +40,16 @@ label {
 }
 
 input {
-    padding-left: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+}
+
+select {
+    padding: 0 10px;
     border-radius: 5px;
     height: 25px;
     font-size: 12px;
@@ -48,4 +66,43 @@ input {
 
 button {
     width: 100px;
+    height: 30px;
+    background-color: #ee1f1f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+button:hover {
+    background-color: #c71919;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+}
+
+.voltar a {
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    background-color: #ee1f1f;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.voltar a:hover {
+    background-color: #c71919;
 }
