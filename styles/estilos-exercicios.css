@@ -8,13 +8,17 @@
 }
 
 body {
-    background-color: rgb(52, 52, 160);
+    background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 600px;
     color: #fff;
+}
+
+h1 {
+    cursor: default;
 }
 
 .margin {
@@ -27,7 +31,7 @@ body {
     height: 300px;
     width: 500px;
     padding: 20px 40px;
-    background-color: rgb(37, 37, 117);
+    background-color: #333333;
     border-radius: 10px;
 }
 
@@ -67,7 +71,7 @@ select {
 button {
     width: 100px;
     height: 30px;
-    background-color: #ee1f1f;
+    background-color: #B70816;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -76,7 +80,7 @@ button {
 }
 
 button:hover {
-    background-color: #c71919;
+    background-color: #890304;
     cursor: pointer;
 }
 
@@ -85,24 +89,35 @@ p {
     margin-top: 20px;
 }
 
-.voltar {
+.voltar-avancar {
     display: flex;
     justify-content: center;
 }
 
-.voltar a {
-    width: 150px;
+.voltar-avancar a {
+    width: 100px;
     padding: 10px;
     text-decoration: none;
     text-align: center;
     align-items: center;
-    background-color: #ee1f1f;
+    background-color: #B70816;
     color: #fff;
     border-radius: 10px;
     margin: 20px 10px;
     transition: 0.3s ease-in-out;
 }
 
-.voltar a:hover {
-    background-color: #c71919;
+.voltar-avancar a:hover {
+    background-color: #890304;
+}
+
+.seta-voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.seta-voltar a {
+    font-size: 18px;
+    color: #fff;
 }

@@ -13,28 +13,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 600px;
-    background-color: rgb(52, 52, 160);
+    background-color: #1A1A1A;
 }
 
 h1 {
     color: #fff;
     text-align: center;
-}
-
-a {
-    background-color: #ee1f1f;
-    text-decoration: none;
-    margin: 40px;
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    border-radius: 10px;
-    color: #fff;
-    transition: 0.3s ease-in-out;
-}
-
-a:hover {
-    background-color: #c71919;
+    cursor: default;
 }
 
 .exercicios {
@@ -46,7 +31,7 @@ a:hover {
 }
 
 .exercicios a {
-    background-color: #ee1f1f;
+    background-color: #B70816;
     text-decoration: none;
     margin: 40px;
     padding: 20px;
@@ -58,6 +43,16 @@ a:hover {
 }
 
 .exercicios a:hover {
-    background-color: #c71919;
+    background-color: #890304;
+}
 
+.seta-voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.seta-voltar a {
+    font-size: 18px;
+    color: #fff;
 }
