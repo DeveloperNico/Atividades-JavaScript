@@ -17,6 +17,17 @@ function Calcular() {
     else {
         document.getElementById('resultado2').innerText = `A média ${media} é ímpar.` 
     }
+
+    document.getElementById('nota1').value = "";
+    document.getElementById('nota2').value = "";
+
+    document.getElementById('nota1').focus();
 }
 
 document.getElementById("calcular").addEventListener("click", Calcular);
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        Calcular();
+    }
+});

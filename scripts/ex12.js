@@ -7,6 +7,16 @@ function Calcular() {
     }
 
     document.getElementById('resultado').innerText = `O fatorial de ${numero}! é = ${fatorial}`
+
+    document.getElementById('numero').value = "";
+
+    document.getElementById('numero').focus();
 }
 
 document.getElementById("calcular").addEventListener("click", Calcular);
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        Calcular();
+    }
+});

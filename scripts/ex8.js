@@ -7,6 +7,16 @@ function Calcular() {
     else {
         document.getElementById('resultado').innerText = `O ano ${anoAtual} não é bisexto.`
     }
+
+    document.getElementById('anoAtual').value = "";
+
+    document.getElementById('anoAtual').focus();
 }
 
 document.getElementById("calcular").addEventListener("click", Calcular);
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        Calcular();
+    }
+});

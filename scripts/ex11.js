@@ -21,7 +21,11 @@ function Calcular() {
     }
 }
 
-document.getElementById("calcular").addEventListener("click", function(event) {
-    event.preventDefault(); // Impede que o comportamento padrão do botão ocorra
-    Calcular();
+document.getElementById("calcular").addEventListener("click", Calcular);
+
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        Calcular();
+    }
 });
