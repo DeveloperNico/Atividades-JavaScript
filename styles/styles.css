@@ -133,6 +133,7 @@ body {
 }
 
 .predio1 {
+    position: relative;
     width: 200px;
     height: 550px;
     background-color: #3b3b3b;
@@ -203,7 +204,7 @@ body {
     height: 500px;
     background-color: #999999;
     opacity: 1; /* Totalmente visível */
-    z-index: 4;
+    z-index: 5;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra mais forte */
     display: flex;
     flex-direction: column;
@@ -235,7 +236,7 @@ body {
     height: 390px;
     background-color: #6d6d6d;
     opacity: 1;
-    z-index: 5;
+    z-index: 4;
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.55); /* Sombra forte */
 }
 
@@ -309,4 +310,17 @@ body {
     height: 100px;
     background-color: #2e2d2b;
     z-index: 7; /* Coloca o chão atrás dos prédios */
+}
+
+.deadpool {
+    position: absolute;
+    top: -80px; /* Ajuste conforme necessário para colocar o Deadpool em cima */
+    left: 92%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajuste para garantir que esteja centralizado no topo do prédio */
+    z-index: 10; /* Garante que o Deadpool fique acima do prédio */
+}
+
+.deadpool img {
+    width: 140px;
+    height: auto;
 }
