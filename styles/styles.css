@@ -28,7 +28,7 @@ body {
 .teia {
     position: fixed;
     top: 0;
-    left: 50%;
+    left: 49.95%;
     width: 2px; /* Largura fina para a linha */
     height: 0; /* Começa com altura 0 */
     background: linear-gradient(to bottom, #cecece, #ccc); /* Gradiente para dar efeito */
@@ -40,7 +40,7 @@ body {
 .miles-de-cabeca-para-baixo {
     position: fixed;
     top: 0; /* Começa acima da tela */
-    left: 50%; /* Centraliza a imagem */
+    left: 50.1%; /* Centraliza a imagem */
     transform: translateX(-50%);
     z-index: 2; /* Fica acima da teia */
 }
