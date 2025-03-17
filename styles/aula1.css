@@ -12,22 +12,46 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 100%;
     background-color: #1A1A1A;
 }
 
-h1 {
+.aula {
+    padding: 40px;
+}
+
+.titulo {
+    margin-bottom: 30px;
+
+    & h1 {
+        color: #fff;
+        text-align: center;
+        cursor: default;
+    }
+}
+
+.textos {
+    display: flex;
+    justify-content: space-between;
     color: #fff;
-    text-align: center;
-    cursor: default;
+    font-size: 12px;
+    gap: 20px;
+    
+    & p {
+        width: 235px;
+    }
 }
 
 .exercicios {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
 }
 
 .exercicios a {
