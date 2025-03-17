@@ -403,13 +403,10 @@ body {
     z-index: 1;
 }
 
-.capitao-america {
-    right: 50%;
-}
-
-.capitao-america img{
+.ultron img{
     width: 400px;
-    margin-left: 65%;
+    margin-left: 87%;
+    margin-bottom: 5%;
 }
 
 .homem-de-ferro img{
