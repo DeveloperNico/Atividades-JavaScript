@@ -397,6 +397,14 @@ body {
     height: 100px;
     background-color: #2e2d2b;
     z-index: 7; /* Coloca o chão atrás dos prédios */
+
+    & .homem-de-ferro {
+        width: 55%;
+    }
+
+    & .capitao_america {
+        width: 500px;
+    }
 }
 
 .chao img {
