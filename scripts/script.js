@@ -68,4 +68,22 @@ function generateStars(numStars) {
 }
 
 // Chama a função para gerar, por exemplo, 100 estrelas
-generateStars(100); // Gera 100 estrelas aleatórias na tela
+generateStars(250); // Gera 100 estrelas aleatórias na tela
+
+document.getElementById("janela1").addEventListener("click", function() {
+    let hulkGif = document.getElementById("hulkGif");
+
+    if (!hulkGif) {
+        hulkGif = document.createElement("img");
+        hulkGif.id = "hulkGif";
+        hulkGif.src = "./images/hulk-gif.gif"; // Substitua pelo caminho correto
+        document.body.appendChild(hulkGif);
+    }
+
+    hulkGif.style.display = "block";
+
+    // Opcional: Ocultar após alguns segundos
+    setTimeout(() => {
+        hulkGif.style.display = "none";
+    }, 5000); // 5 segundos
+});
