@@ -1,7 +1,7 @@
 let originalTitle = document.title;
 
 window.addEventListener("blur", function() {
-    document.title = "Venha ver meus exercícios! 😢";
+    document.title = "Ei, vem ver meus exercícios! 😢";
 });
 
 window.addEventListener("focus", function() {
