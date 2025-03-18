@@ -450,9 +450,9 @@ body {
 }
 
 #hulkGif {
-    position: fixed;
+    position: absolute;
     left: -50px;
-    bottom: 10px;
+    bottom: -45%;
     width: 500px; /* Ajuste o tamanho conforme necessário */
     display: none;
     z-index: 1000;

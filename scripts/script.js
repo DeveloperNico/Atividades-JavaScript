@@ -1,3 +1,13 @@
+let originalTitle = document.title;
+
+window.addEventListener("blur", function() {
+    document.title = "Venha ver meus exercícios! 😢";
+});
+
+window.addEventListener("focus", function() {
+    document.title = originalTitle;
+});
+
 // Variáveis de controle
 let lastScrollPosition = 0; // Armazena a última posição do scroll
 let isScrolling = false; // Controla se o usuário está rolando ou não
