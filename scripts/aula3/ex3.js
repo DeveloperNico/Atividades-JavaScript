@@ -3,7 +3,7 @@ function SepararLetras() {
 
     let separarLetras = nome.split('').join(', ');
 
-    document.getElementById('resultado').innerText = `Nome separado = ${separarLetras}`;
+    document.getElementById('resultado').innerText = `Nome separado = ${separarLetras}.`;
 
     document.getElementById('nome').value = "";
     document.getElementById('nome').focus();

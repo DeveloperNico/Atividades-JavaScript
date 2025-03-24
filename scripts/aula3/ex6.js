@@ -9,7 +9,7 @@ function converterParaMinutos() {
     let [horas, minutos] = horario.split(':').map(Number);
     let totalMinutos = (horas * 60) + minutos;
 
-    document.getElementById('resultado').innerText = `${horario} em minutos é = ${totalMinutos} min`;
+    document.getElementById('resultado').innerText = `${horario} em minutos é = ${totalMinutos} min.`;
 
     document.getElementById('horario').value = "";
     document.getElementById('horario').focus();

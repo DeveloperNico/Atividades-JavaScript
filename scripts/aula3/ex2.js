@@ -3,7 +3,7 @@ function InverterString () {
 
     let fraseInvertida = frase.split('').reverse().join('');
 
-    document.getElementById('resultado').innerText = `Frase invertida = ${fraseInvertida}`;
+    document.getElementById('resultado').innerText = `Frase invertida = ${fraseInvertida}.`;
 
     document.getElementById('frase').value = "";
     document.getElementById('frase').focus();

@@ -7,7 +7,7 @@ function OrdenarCrescente() {
 
     numero.sort((a, b) => a - b);
 
-    document.getElementById('resultado').innerText = `Ordem crescente = ${numero.join(', ')}`;
+    document.getElementById('resultado').innerText = `Ordem crescente = ${numero.join(', ')}.`;
     
     document.getElementById('numero1').value = "";
     document.getElementById('numero2').value = "";
