@@ -22,7 +22,7 @@ const calcularImposto = () => {
 
     document.getElementById('faixa').value = "";
     document.getElementById('faixa').focus();
-}
+};
 
 document.getElementById("calcular").addEventListener("click", calcularImposto);
 
