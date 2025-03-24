@@ -129,3 +129,13 @@ p {
     font-size: 18px;
     color: #fff;
 }
+
+.container-crescente {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 500px;
+    padding: 20px 40px;
+    background-color: #333333;
+    border-radius: 10px;
+}
