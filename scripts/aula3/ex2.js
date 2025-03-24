@@ -1,4 +1,4 @@
-function InverterString () {
+function inverterString () {
     let frase = document.getElementById('frase').value;
 
     let fraseInvertida = frase.split('').reverse().join('');

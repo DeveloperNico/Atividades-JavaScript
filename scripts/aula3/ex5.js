@@ -1,4 +1,4 @@
-function OrdenarCrescente() {
+function ordenarCrescente() {
     let numero1 = document.getElementById('numero1').value;
     let numero2 = document.getElementById('numero2').value;
     let numero3 = document.getElementById('numero3').value;

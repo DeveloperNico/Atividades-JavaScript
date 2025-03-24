@@ -1,4 +1,4 @@
-function SepararLetras() {
+function separarLetras() {
     let nome = document.getElementById('nome').value;
 
     let separarLetras = nome.split('').join(', ');
