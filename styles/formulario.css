@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 75  0px;
     color: #fff;
 }
 
@@ -21,35 +21,14 @@ h1 {
     cursor: default;
 }
 
-.margin {
-    margin-top: 90px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 600px;
     width: 500px;
     padding: 20px 40px;
     background-color: #333333;
     border-radius: 10px;
-}
-
-.container.expandido {
-    height: 465px;
-}
-
-label {
-    padding: 10px 0 10px 0;
-}
-
-input {
-    padding: 0 10px;
-    border-radius: 5px;
-    height: 25px;
-    font-size: 12px;
-    outline: none;
-    border: none;
 }
 
 select {
@@ -65,14 +44,6 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
-}
-
-.botao-calculadora {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
     margin-top: 25px;
 }
 
@@ -94,7 +65,7 @@ button:hover {
 
 p {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .voltar-avancar {
@@ -130,39 +101,46 @@ p {
     color: #fff;
 }
 
-.container-crescente {
-    display: flex;
-    flex-direction: column;
-    height: 330px;
-    width: 500px;
-    padding: 20px 40px;
-    background-color: #333333;
-    border-radius: 10px;
-}
-
-.container-cadastro {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    width: 500px;
-    padding: 20px 40px;
-    background-color: #333333;
-    border-radius: 10px;
-
-    & .radio {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
 .erro {
     border: 2px solid #B70816;
 }
 
+.input-group {
+    margin-bottom: 10px; /* Controla o espaçamento entre os grupos */
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 0 10px;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    margin: 0; /* Remove a margem direta do input */
+}
+
+.radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .masculino {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    & .feminino {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
 .erro-mensagem {
+    margin-top: 5px; /* Espaçamento opcional entre input e erro */
     color: #B70816;
     font-size: 12px;
-    margin-top: 5px;
 }
