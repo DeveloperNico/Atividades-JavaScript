@@ -42,7 +42,7 @@ document.getElementById("adicionarNumero").addEventListener("click", adicionarId
 document.getElementById("calcular").addEventListener("click", calcularDobro);
 
 document.addEventListener("keydown", function(event) {
-    if (event.key === "Tab") {
+    if (event.key === "Enter") {
         adicionarIdade();
     }
 });
