@@ -36,7 +36,7 @@ function calcularMedia() {
 }
 
 document.getElementById("adicionarNumero").addEventListener("click", adicionarNumero);
-document.getElementById("calcular").addEventListener("click", calcularDobro);
+document.getElementById("calcular").addEventListener("click", calcularMedia);
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
