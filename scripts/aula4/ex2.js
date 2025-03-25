@@ -17,7 +17,7 @@ function adicionarNumero() {
     }
 }
 
-function calcularDobro() {
+function calcularMedia() {
     if (numeros.length < 8) {
         document.getElementById('resultado').innerText = `Adicione 8 números antes de calcular!`;
         return;
@@ -46,6 +46,6 @@ document.addEventListener("keydown", function(event) {
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-        calcularDobro();
+        calcularMedia();
     }
 });
