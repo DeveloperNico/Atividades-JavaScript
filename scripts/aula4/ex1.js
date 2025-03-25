@@ -1,7 +1,7 @@
 let numeros = [];
 
 function adicionarNumero() {
-    let inputNumero = document.getElementById('numero1');
+    let inputNumero = document.getElementById('numeros');
     let numero = Number(inputNumero.value);
 
     if (isNaN(numero)) {
@@ -20,6 +20,7 @@ function adicionarNumero() {
 function calcularDobro() {
     if (numeros.length < 5) {
         document.getElementById('resultado').innerText = `Adicione 5 números antes de calcular!`;
+        return
     }
 
     let dobrados = numeros.map(num => num * 2);
